@@ -41,3 +41,24 @@ public class encapsulamento {
         System.out.println("Nome: " + nome + ", Idade: " + idade);
     }
 }
+
+class ProgramaPrincipal {
+    public static void main(String[] args) {
+        // Criando objeto com construtor
+        encapsulamento pessoa = new encapsulamento("Thalyson", 25);
+
+        // Exibindo informações
+        pessoa.mostrarInfo();
+
+        // Alterando valores com setters
+        pessoa.setNome("Maria");
+        pessoa.setIdade(30);
+
+        // Exibindo novamente
+        pessoa.mostrarInfo();
+
+        // Tentando colocar idade inválida
+        pessoa.setIdade(-5);
+    }
+}
+
